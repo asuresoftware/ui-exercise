@@ -36,9 +36,6 @@ ul.breadcrumb li {
   font-size: 18px;
   color:white;
 
-  @media all and (max-width: 815px) {
-    font-size: 10rem;
-  }
 }
 
 ul.breadcrumb li+li:before {
