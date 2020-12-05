@@ -40,7 +40,7 @@ The App consists of 3 pages:
 - Javascript
 - ReactJs with Hooks 
 - HTML
-- Scss
+- Sass
 
 
 
