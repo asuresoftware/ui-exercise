@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Merriweather&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "lato", "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0 , 0, 0.6)), url(https://iamafoodblog.com/wp-content/uploads/2020/05/homemade-birria-tacos-recipe-3273w.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
