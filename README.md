@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# My Taco
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## https://mytacos.netlify.app/
 
-## Available Scripts
+A Frontend ReactJs app created created using Yelp's API to list all the Taco restaurants in a given city and displays the details of a restaurant selected from the list 
 
-In the project directory, you can run:
+Yelp's API does not allow CORS so a proxy with CORS support using glitch.me was set up to return data from two of Yelp's endpoints.
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The App consists of 3 pages:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- The first page is the search page where the user can input a city name in order to get Restaurants list
 
-### `npm test`
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/k38r1Bz/My-Taco1.gif" alt="My-Taco1"></a><br /><a target='_blank' href='https://emoticoncentral.com/category/path'>path</a><br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The second page will display a list of 20 different Taco restaurants will display if the user typed a valid city in the first page's search box, their is an option for the user to sort the list based on rating either in ascending or descending order.
 
-### `npm run build`
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/dJtXYcM/My-Taco2.gif" alt="My-Taco2"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The third the page has a card contains the details of the selected restaurant such as (address, telephone number...etc).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/MPVGy6D/My-Taco3.gif" alt="My-Taco3" ></a>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## functionality
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- App is fully responsive to different screen sizes including large screen monitors, laptops, Ipad $ smart phones.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- As mentioned earlier the app displays 20 different restaurants that user can sort them by rating.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Conditional Rendering was added to avoid running into errors if Api response doesn't contain a certain key value pair that supposed to be displayed, for example the restaurant open status doesn't exist for all restaurants 
 
-## Learn More
+- The app idea provide adding improvements like using the JS geolocation to provide the user with results related his current city location which I am planning to add it also review the UI accessibility 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech stack
 
-### Code Splitting
+- Javascript
+- ReactJs with Hooks 
+- HTML
+- Scss
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
