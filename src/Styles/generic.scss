@@ -2,6 +2,7 @@
 
 @import "./home-page";
 @import "./search-results";
+@import "./restaurant-details";
 
 * {
   margin: 0;
@@ -16,7 +17,7 @@ html {
   font-weight: 400;
   font-size: 20px;
   height: 100vh;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0 , 0, 0.5)), url(https://iamafoodblog.com/wp-content/uploads/2020/05/homemade-birria-tacos-recipe-3273w.jpg);
+  background-image:linear-gradient(rgba(26, 25, 25, 0.6), rgba(26, 25, 25, 0.6)), url(https://iamafoodblog.com/wp-content/uploads/2020/05/homemade-birria-tacos-recipe-3273w.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
