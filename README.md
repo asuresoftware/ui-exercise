@@ -32,13 +32,13 @@ The App consists of 3 pages:
 
 - Conditional Rendering was added to avoid running into errors if Api response doesn't contain a certain key value pair that supposed to be displayed, for example the restaurant open status doesn't exist for all restaurants 
 
-- The app idea provide adding improvements like using the JS geolocation to provide the user with results related his current city location which I am planning to add it also review the UI accessibility 
+- The app idea provide adding improvements like using the JS geolocation to provide the user with results related his current city location and showing resturants location on the a map which I am planning to add it also review the UI accessibility 
 
 
 ## Tech stack
 
 - Javascript
-- ReactJs with Hooks 
+- ReactJs with Hooks & Router
 - HTML
 - Sass
 

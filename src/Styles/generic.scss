@@ -21,6 +21,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
 }
 
 /* Styling of Breadcrumbs list*/
@@ -34,6 +35,10 @@ ul.breadcrumb li {
   display: inline;
   font-size: 18px;
   color:white;
+
+  @media all and (max-width: 815px) {
+    font-size: 10rem;
+  }
 }
 
 ul.breadcrumb li+li:before {

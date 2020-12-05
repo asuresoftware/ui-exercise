@@ -3,7 +3,7 @@
   margin: auto;
   height: 100vh;
  
- @media screen and (max-width: 1400px) {
+ @media all and (max-width: 1400px) {
    width: 100%;
    }
  
@@ -11,7 +11,7 @@
      margin-bottom:1.5rem;
  
  
-     @media screen and (max-width: 815px) {
+     @media all and (max-width: 815px) {
        font-size: 4rem;
      }
    }
@@ -23,20 +23,20 @@
    grid-row-gap: 2rem;
    margin-bottom: 4rem;
  
-   @media screen and (max-width: 1650px) {
+   @media all and (max-width: 1650px) {
      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
  
-   @media screen and (max-width: 1350px) {
+   @media all and (max-width: 1350px) {
      grid-template-columns: 1fr 1fr 1fr;
      margin:0;
    }
  
-   @media screen and (max-width: 1000px) {
+   @media all and (max-width: 1000px) {
      grid-template-columns: 1fr 1fr;
    }
  
-   @media screen and (max-width: 815px) {
+   @media all and (max-width: 815px) {
      grid-template-columns: 1fr;
    }
  
