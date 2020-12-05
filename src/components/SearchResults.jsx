@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 export function SearchResults() {
   const params = useParams();
   const [searchedRestaurants, setSearchedRestaurants] = useState([]);
+  const [sortStatus, setSortStatus] = useState("");
   const searchCity = params.searchCity;
 
   useEffect(() => {
@@ -21,6 +22,13 @@ export function SearchResults() {
     loadSearch();
   }, [searchCity]);
 
+  let sortedRestaurants = searchedRestaurants;
+  if (sortStatus === "ascending") {
+    sortedRestaurants = searchedRestaurants.sort((a, b) => a.rating - b.rating);
+  }
+  if (sortStatus === "descending") {
+    sortedRestaurants = searchedRestaurants.sort((a, b) => b.rating - a.rating);
+  }
   return (
     <>
       <ul className="breadcrumb">
@@ -32,8 +40,15 @@ export function SearchResults() {
 
       <main className="results">
         <h1>TACOS IN {searchCity.toUpperCase()}</h1>
+        <div className="dropdown">
+          <select onChange={(event) => setSortStatus(event.target.value)}>
+            <option value="unsorted">Unsorted</option>
+            <option value="ascending">Ascending</option>
+            <option value="descending">Descending</option>
+          </select>
+        </div>
         <div className="cards-container">
-          {searchedRestaurants.map((restaurant) => (
+          {sortedRestaurants.map((restaurant) => (
             <div className="card" key={restaurant.id}>
               <Link to={`/${restaurant.id}`}>
                 <h3>{restaurant.name}</h3>
