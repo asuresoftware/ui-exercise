@@ -6,6 +6,11 @@ A Frontend ReactJs app created created using Yelp's API to list all the Taco res
 
 Yelp's API does not allow CORS so a proxy with CORS support using glitch.me was set up to return data from two of Yelp's endpoints.
 
+For example: https://colorful-halibut.glitch.me/api/v1/businesses/search?location=austin&term=tacos 
+&
+https://colorful-halibut.glitch.me/api/v1/businesses/g6B2TZYS7JKKpNWPwVnwqw
+
+
 ## Pages
 
 The App consists of 3 pages:
@@ -28,7 +33,7 @@ The App consists of 3 pages:
 
 ## functionality
 
-- App is fully responsive to different screen sizes including large screen monitors, laptops, Ipad $ smart phones.
+- App is UI responsive to different screen sizes including large screen monitors, laptops, Ipad & smart phones.
 
 - As mentioned earlier the app displays 20 different restaurants that user can sort them by rating.
 
