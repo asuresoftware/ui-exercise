@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Merriweather&display=swap');
+
+@import "./home-page";
+@import "./search-results";
+@import "./restaurant-details";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "lato", "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  height: 100vh;
+  background-image:linear-gradient(rgba(26, 25, 25, 0.6), rgba(26, 25, 25, 0.6)), url(https://iamafoodblog.com/wp-content/uploads/2020/05/homemade-birria-tacos-recipe-3273w.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Styling of Breadcrumbs list*/
+ul.breadcrumb {
+  margin-left: 2rem;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: transparent;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color:white;
+
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}

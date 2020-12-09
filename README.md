@@ -1,79 +1,63 @@
-# Asure UI Engineer Coding Exercise
+# My Taco
 
-Make sure you read this document carefully and follow the guidelines we've provided.
+## https://mytacos.netlify.app/
 
-## Context
+A Frontend ReactJs app created created using Yelp's API to list all the Taco restaurants in a given city and displays the details of a restaurant selected from the list 
 
-At Asure, we love tacos but we need help finding taco restaurants. We'd like you to use HTML, CSS, and JavaScript (React) to implement a web app for listing taco restaurants in any given US city. You will need to use Yelp's API for taco restaurant data to fill in the details and functionality as described below.
+Yelp's API does not allow CORS so a proxy with CORS support using glitch.me was set up to return data from two of Yelp's endpoints.
 
-## Requirements
-
-### Yelp API
-
-Yelp's API does not allow CORS so we've set up a proxy with CORS support using glitch.me to return data from two of Yelp's endpoints:
-
-#### Business Search:
-https://colorful-halibut.glitch.me/api/v1/businesses/search
-
-When provided with the correct query parameters, this endpoint will return a list of restaurants in a given city.
-
-For example: https://colorful-halibut.glitch.me/api/v1/businesses/search?location=austin&term=tacos
-
-For a list of supported query parameters, please refer to the [Yelp API documentation for business search](https://www.yelp.com/developers/documentation/v3/business_search) 
-
-#### Detailed Business Search:
-https://colorful-halibut.glitch.me/api/v1/businesses/{id}
-
-When provided with an ID, this endpoint will return the details for a given search result.
-
-For example: https://colorful-halibut.glitch.me/api/v1/businesses/g6B2TZYS7JKKpNWPwVnwqw
-
-### Functionality
-- Yelp's `/businesses/search` endpoint requires a `location`. Your UI should support searching for tacos in any city.
-- By default, the endpoint returns 20 results. Please handle pagination in a way that you feel provides the best user experience.
-- Help us find the best tacos by allowing the user to sort results based on rating, ascending and descending.
-- Unless on mobile, the user should be presented with 4-6 items per row depending on viewport size.
-
-### Tech stack
-
-- JavaScript
-  - Use React.
-  - Use Create React App or create your project from scratch, but please don't use any other boilerplate or starter project.
-- Use a preprocessor like SASS/SCSS/Less, a CSS in JSS library like styled-components, a design system, or anything else you see fit to style your interface.
-
-### Bonus
-- Add support for a details view using the [Detailed Business Search](#detailed-business-search).
-  - Support viewing multiple images of delicious tacos in a details view.
-- Make your UI responsive.
-- Elegantly handle loading states.
-- Write clear documentation on how the app was designed and how to run the code.
-- Write unit tests.
-- Create your components in [Storybook](https://storybook.js.org) with tests.
-- Provide an online demo of the application.
-- Include subtle animations to focus attention.
-- Describe optimization opportunities when you conclude.
-
-## What matters in this exercise
-
-Use any libraries you would normally use if this were a real production App. Note: we're interested in your code & the way you solve the problem, not how well you can use a particular library or feature.
-*Due to the open-ended nature of this exercise, we don't expect you to complete it.* We're interested in your method and how you approach the problem just as much as we're interested in the end result.
-
-Here's what you should strive for:
-
-- Good use of current HTML, CSS, JavaScript, and performance best practices.
-- Solid testing approach.
-- Extensible code.
-- Have fun.
-- Able to explain your architectural decisions.
-- Demonstrate good git hygiene.
+For example: https://colorful-halibut.glitch.me/api/v1/businesses/search?location=austin&term=tacos 
+&
+https://colorful-halibut.glitch.me/api/v1/businesses/g6B2TZYS7JKKpNWPwVnwqw
 
 
-## Q&A
+## Pages
 
-> Where should I send back the result when I'm done?
+The App consists of 3 pages:
 
-Fork this repo and send us a pull request when you're done.
+- The first page is the search page where the user can input a city name in order to get Restaurants list
 
-> What if I have a question?
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/k38r1Bz/My-Taco1.gif" alt="My-Taco1"></a><br /><a target='_blank' href='https://emoticoncentral.com/category/path'>path</a><br />
 
-Create a new issue in this repo and we will respond and get back to you quickly.
+- The second page will display a list of 20 different Taco restaurants will display if the user typed a valid city in the first page's search box, their is an option for the user to sort the list based on rating either in ascending or descending order.
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/x8Qg0QZ/Dec-06-2020-12-30-51.gif" alt="Dec-06-2020-12-30-51" ></a>
+
+
+- The third the page has a card contains the details of the selected restaurant such as (address, telephone number...etc).
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/MPVGy6D/My-Taco3.gif" alt="My-Taco3" ></a>
+
+## Demo Link: <a href="https://youtu.be/FNGspnjJJJ8"> My Tacos </a>
+
+
+## functionality
+
+- App is UI responsive to different screen sizes including large screen monitors, laptops, Ipad & smart phones.
+
+- As mentioned earlier the app displays 20 different restaurants that user can sort them by rating.
+
+- Conditional Rendering was added to avoid running into errors if Api response doesn't contain a certain key value pair that supposed to be displayed, for example the restaurant open status doesn't exist for all restaurants 
+
+- The app idea provide adding improvements like using the JS geolocation to provide the user with results related his current city location and showing resturants location on the a map which I am planning to add it also review the UI accessibility 
+
+
+## Tech stack
+
+- Javascript
+- ReactJs with Hooks & Router
+- HTML
+- Sass
+
+
+
+
+
+
+
+
+
+
+
+
+
