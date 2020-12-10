@@ -1,0 +1,13 @@
+/* margin adjustment on our header and sub text */
+h1 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* center all header text  */
+#header_div {
+  text-align: center;
+}
