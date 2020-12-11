@@ -8,7 +8,7 @@ function TacoSearch() {
   //this will be the search city set by the user
   const [searchCity, setsearchCity] = useState("");
 
-  //use effect will be called when there is a search term to be put into the fetch
+  //showtacos will be called when there is a search term to be put into the fetch
 
   const showTacos = () => {
     //this is the fetch where a variable will be inserted depending upon the city searched
@@ -17,7 +17,7 @@ function TacoSearch() {
     )
       .then((response) => response.json())
 
-      //this is where we push up the information into our restInfo variable depending upon the results of our fetch
+      //this is where we push up the information into our restInfo variable depending upon the results of our fetch (always going to be a 20 length array)
       .then((restaurant) => {
         setRestInfo(restaurant);
       });
@@ -27,7 +27,7 @@ function TacoSearch() {
   useEffect(() => {
    if (searchCity) {
     showTacos(); }
-//need to figure out how to make this depenecy only refresh when searchcity is update ??
+//need to figure out how to make this depenecy only refresh when searchcity is updated ??
   }, [searchCity]);
 
 //function for our onSumit event in our user input form... what will happen when the user hits submit
@@ -55,9 +55,14 @@ function TacoSearch() {
       {restInfo.length !== 0 ? (
         restInfo.businesses.map((restaurant, index) => {
           return (
+                
             <div key={index}>
               <div>
-                <h3 className="contactName">{restaurant.name}</h3>
+                <h3 className="contactName">{restaurant.name}, </h3>
+                <h4>{restaurant.location.display_address}</h4>
+                <h4>Phone: {restaurant.display_phone}</h4>
+                <h6>Rating: {restaurant.rating} stars</h6>
+                <br></br>
               </div>
             </div>
           );
