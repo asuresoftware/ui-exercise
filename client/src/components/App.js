@@ -1,4 +1,3 @@
-import "./App.css";
 import React from "react";
 import TacoHeader from "./Header/jHeader.js";
 import TacoSearch from "./Body/jBody.js";
