@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { useContext, useReducer, useEffect } from "react";
 import Context from "./contexts/context";
 import Reducer from "./reducers/reducer";
@@ -17,16 +17,15 @@ function App() {
     return () => {};
   }, [state]);
 
-  console.log(state.search_results);
-
   return (
     <Context.Provider value={{ state, dispatch }}>
       <div className="App container my-4">
         <header className="App-header">
           <h1>Taco Finder</h1>
           <SearchField />
-          <Results />
         </header>
+        <hr />
+        {state.search_results.length > 0 ? <Results /> : null}
       </div>
     </Context.Provider>
   );

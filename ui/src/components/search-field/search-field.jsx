@@ -3,13 +3,16 @@ import Context from "../../contexts/context";
 import axios from "axios";
 
 function SearchField() {
+  // Pull state from context
   const { dispatch, state } = useContext(Context);
+
+  // Local state
   const [query, setQuery] = useState({
     location: "Tampa,FL",
   });
 
   const endpoint = `https://colorful-halibut.glitch.me/api/v1/businesses/search?location=
-  ${query.location}&term=tacos`;
+  ${query.location}&term=tacos&sort_by=rating`;
 
   const handleChange = (event) => {
     const {
@@ -45,6 +48,7 @@ function SearchField() {
           name="location"
           onChange={handleChange}
           defaultValue={query.location}
+          placeholder="city, state e.g. Tampa, FL"
         />
       </div>
       <button type="submit">Search</button>
