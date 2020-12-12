@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import Context from "../../contexts/context";
 import axios from "axios";
+import styles from "./search-field.module.scss";
 
 function SearchField() {
   // Pull state from context
@@ -8,7 +9,7 @@ function SearchField() {
 
   // Local state
   const [query, setQuery] = useState({
-    location: "Tampa,FL",
+    location: "",
   });
 
   const endpoint = `https://colorful-halibut.glitch.me/api/v1/businesses/search?location=
@@ -40,18 +41,25 @@ function SearchField() {
 
   return (
     <form onSubmit={handleSubmit} id="search-form">
-      <div className="search-field">
+      <div className="input-group mb-3">
         <input
           type="text"
-          label="Search"
-          id="search-input"
-          name="location"
+          className="form-control"
+          placeholder="Enter a location: city, state e.g. Tampa, FL"
+          aria-label="Location"
+          aria-describedby="button-addon2"
           onChange={handleChange}
           defaultValue={query.location}
-          placeholder="city, state e.g. Tampa, FL"
+          required
         />
+        <button
+          className="btn btn-outline-secondary"
+          type="submit"
+          id="button-addon2"
+        >
+          Find Tacos!
+        </button>
       </div>
-      <button type="submit">Search</button>
     </form>
   );
 }

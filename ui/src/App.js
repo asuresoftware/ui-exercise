@@ -21,7 +21,8 @@ function App() {
     <Context.Provider value={{ state, dispatch }}>
       <div className="App container my-4">
         <header className="App-header">
-          <h1>Taco Finder</h1>
+          <span>- Hello, and Welcome! -</span>
+          <h1>Taco Finder App</h1>
           <SearchField />
         </header>
         <hr />
