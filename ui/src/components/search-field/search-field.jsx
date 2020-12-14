@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import Context from "../../contexts/context";
 import axios from "axios";
-import styles from "./search-field.module.scss";
 
 function SearchField() {
   // Pull state from context
@@ -44,6 +43,7 @@ function SearchField() {
       <div className="input-group mb-3">
         <input
           type="text"
+          name="location"
           className="form-control"
           placeholder="Enter a location: city, state e.g. Tampa, FL"
           aria-label="Location"

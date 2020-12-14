@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Context from "../../contexts/context";
 import { ResultsItem } from "../index";
 
@@ -7,6 +7,10 @@ function Results() {
   const { state } = useContext(Context);
   const [results, setResults] = useState(state.search_results);
   const [sort_by, setSortBy] = useState("desc");
+
+  useEffect(() => {
+    setResults(state.search_results);
+  }, [state]);
 
   const handleSort = (event) => {
     // Results come sorted by highest rating by default...
