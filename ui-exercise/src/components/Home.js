@@ -23,7 +23,7 @@ function Home(props) {
         // div that contains form for search box
         <div id='main-container'>
             {/* on submit, we call the collectUserInput */}
-            <form onSubmit={collectUserInput}>
+            <form className="taco-form" onSubmit={collectUserInput}>
                 {/* form contains two elements: search and submit features */}
                 <div className="search-form">
                     <input

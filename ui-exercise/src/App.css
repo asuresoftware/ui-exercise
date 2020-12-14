@@ -1,38 +1,55 @@
+/* -------------------------------------------------------------------------- */
+/*                                   General features                                   */
+/* -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Siliguri&family=Shadows+Into+Light&display=swap');
+
+a{
+    text-decoration: none;
+    color: rgb(70, 48, 48)
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+#header{
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-content: center;
+  height: 15%;
+  /* background-color: rgba(66, 45, 102, 0.849); */
+  /* color: rgb(255, 255, 255); */
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+#header-links{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* -------------------------------------------------------------------------- */
+/*              Home & Taco List Components                                   */
+/* -------------------------------------------------------------------------- */
+#main-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 85%;
+}
+
+.taco-form {
+  height: 10%;
 }
