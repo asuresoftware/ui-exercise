@@ -1,32 +1,36 @@
+$beigeAccent: #d9c7b9;
+
+#body_flex {
+  display: flex;
+}
+
 #body_div {
   opacity: 0.7;
   text-align: center;
 }
 
-#body_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
+// search result styling for restaurant
 #body_paragraph {
   text-align: center;
   opacity: 0.7;
-  background-color: #d9c7b9;
+  background-color: $beigeAccent;
   margin: 0 auto;
   width: 35vw;
   padding: 10px;
   border: 10px double white;
 }
 
+//
 #color {
-  background-color: #d9c7b9;
+  background-color: $beigeAccent;
 }
 
+//text color
 p {
   color: black;
 }
 
+//size of search input field
 #search {
   width: 25vw;
   margin: 30px;
@@ -36,20 +40,22 @@ p {
   padding: 12px 20px 12px 15px;
 }
 
+//mouse hover color for search
 #submit:hover {
-  background-color: #47a385;
-  color: #d9c7b9;
+  background-color: rgba(71, 163, 133, 1);
+  color: $beigeAccent;
 }
 
+// styling for message that pops up on initial page landing
 #homepage_text {
   padding: 70px;
   padding-bottom: 30vh;
   margin-top: 60px;
-  border-bottom: 10px double #d9c7b9;
+  border-bottom: 10px double $beigeAccent;
   opacity: 0.7;
 }
 
+//creating larger button appearance
 #submit {
   padding: 15px;
 }
-/*# sourceMappingURL=sassBody.css.map */

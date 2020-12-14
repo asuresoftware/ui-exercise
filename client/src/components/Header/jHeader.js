@@ -5,8 +5,10 @@ function TacoHeader() {
   return (
     <div id="header_div">
       <h1>TACO LOCO</h1>
-      <p>
-        <i>Finding crazy-tasty tacos in a city near you</i>
+      <p id="header_subtext">
+        <i>
+          Finding <b>crazy-tasty</b> tacos near you
+        </i>
       </p>
     </div>
   );
