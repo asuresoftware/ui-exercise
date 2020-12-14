@@ -1,0 +1,55 @@
+#body_div {
+  opacity: 0.7;
+  text-align: center;
+}
+
+#body_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#body_paragraph {
+  text-align: center;
+  opacity: 0.7;
+  background-color: #d9c7b9;
+  margin: 0 auto;
+  width: 35vw;
+  padding: 10px;
+  border: 10px double white;
+}
+
+#color {
+  background-color: #d9c7b9;
+}
+
+p {
+  color: black;
+}
+
+#search {
+  width: 25vw;
+  margin: 30px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 12px 20px 12px 15px;
+}
+
+#submit:hover {
+  background-color: #47a385;
+  color: #d9c7b9;
+}
+
+#homepage_text {
+  padding: 70px;
+  padding-bottom: 30vh;
+  margin-top: 60px;
+  border-bottom: 10px double #d9c7b9;
+  opacity: 0.7;
+}
+
+#submit {
+  padding: 15px;
+}
+/*# sourceMappingURL=sassBody.css.map */
