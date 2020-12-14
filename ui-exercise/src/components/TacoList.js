@@ -39,20 +39,18 @@ function TacoList(props) {
                 tacoInfo.businesses.map((tacoPlace, index) => {
                     return (
                         //adding index as an unique key
-                        <div key={index}>
+                        <div id='taco-container' key={index}>
                             {/* div that displays taco place details */}
-                            <div>
                                 <h2 className="display-headline">{tacoPlace.name}</h2>
                                 <p className="infoDisplay">Address: {tacoPlace.location.display_address}</p>
                                 <p className="infoDisplay">Phone: {tacoPlace.display_phone}</p>
                                 <p className="infoDisplay">Rating: {tacoPlace.rating} stars</p>
                             </div>
-                        </div>
                     );
                 })
             ) : (
-                    <div id='header-links'>
-                        <Link to='/'>Search for Tacos!</Link>
+                    <div id='wait-message'>
+                        Searching for Tacos!
                     </div>
                 )}
             <div id='header-links'>

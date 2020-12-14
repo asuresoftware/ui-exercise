@@ -6,13 +6,17 @@
 
 a{
     text-decoration: none;
-    color: rgb(70, 48, 48)
+}
+
+body{
+  margin: 0
 }
 
 .App {
   text-align: center;
   height: 100vh;
   width: 100vw;
+  background-color: rgba(235, 224, 224, 0.137);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -25,8 +29,6 @@ a{
   justify-content: space-between;
   align-content: center;
   height: 15%;
-  /* background-color: rgba(66, 45, 102, 0.849); */
-  /* color: rgb(255, 255, 255); */
   position: relative;
 }
 
@@ -36,20 +38,42 @@ a{
   justify-content: space-between;
   align-content: center;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Hind Siliguri', sans-serif;
+}
+
+#tittle{
+  font-size: 36px;
 }
 
 /* -------------------------------------------------------------------------- */
 /*              Home & Taco List Components                                   */
 /* -------------------------------------------------------------------------- */
-#main-container{
+#search-container{
   display:flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 85%;
+  height: 90%;
+}
+
+#main-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  margin-top: 4%;
+  overflow: scroll;
 }
 
 .taco-form {
   height: 10%;
+}
+
+#taco-container{
+  margin-top: 2%;
+}
+
+#wait-message{
+  align-content: center;
+  margin-top: 10%;
 }
