@@ -1,0 +1,46 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/2f/8d/a4/2f8da46a32b031a18043520ce17d6883.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+}
+
+#search input {
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.App h1 {
+  color: blueviolet;
+  font-weight: 800;
+  font-size: 8rem;
+  text-shadow: 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media all and (max-width: 500px) {
+  #search input {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  .App h1 {
+    color: blueviolet;
+    font-weight: 800;
+    font-size: 8rem;
+    text-shadow: 10px 10px rgba(0, 0, 0, 0.6);
+  }
+}
