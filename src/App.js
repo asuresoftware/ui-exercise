@@ -65,4 +65,4 @@ export default App;
 // Homepage looks solid, would like results to populate below input form in a modal ideally, with functions for sorting by yelp review
 
 // Given more time, would like to finish trying to get results populating, add animations on homepage with a popup modal...
-// ... add leaflet maps with pins for every taco restaurant in a given city, would like to
+// ... add leaflet maps with pins for every taco restaurant in a given city.
