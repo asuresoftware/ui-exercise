@@ -13,15 +13,17 @@ At Asure, we love tacos but we need help finding taco restaurants. We'd like you
 Yelp's API does not allow CORS so we've set up a proxy with CORS support using glitch.me to return data from two of Yelp's endpoints:
 
 #### Business Search:
+
 https://colorful-halibut.glitch.me/api/v1/businesses/search
 
 When provided with the correct query parameters, this endpoint will return a list of restaurants in a given city.
 
 For example: https://colorful-halibut.glitch.me/api/v1/businesses/search?location=austin&term=tacos
 
-For a list of supported query parameters, please refer to the [Yelp API documentation for business search](https://www.yelp.com/developers/documentation/v3/business_search) 
+For a list of supported query parameters, please refer to the [Yelp API documentation for business search](https://www.yelp.com/developers/documentation/v3/business_search)
 
 #### Detailed Business Search:
+
 https://colorful-halibut.glitch.me/api/v1/businesses/{id}
 
 When provided with an ID, this endpoint will return the details for a given search result.
@@ -29,6 +31,7 @@ When provided with an ID, this endpoint will return the details for a given sear
 For example: https://colorful-halibut.glitch.me/api/v1/businesses/g6B2TZYS7JKKpNWPwVnwqw
 
 ### Functionality
+
 - Yelp's `/businesses/search` endpoint requires a `location`. Your UI should support searching for tacos in any city.
 - By default, the endpoint returns 20 results. Please handle pagination in a way that you feel provides the best user experience.
 - Help us find the best tacos by allowing the user to sort results based on rating, ascending and descending.
@@ -42,6 +45,7 @@ For example: https://colorful-halibut.glitch.me/api/v1/businesses/g6B2TZYS7JKKpN
 - Use a preprocessor like SASS/SCSS/Less, a CSS in JSS library like styled-components, a design system, or anything else you see fit to style your interface.
 
 ### Bonus
+
 - Add support for a details view using the [Detailed Business Search](#detailed-business-search).
   - Support viewing multiple images of delicious tacos in a details view.
 - Make your UI responsive.
@@ -56,7 +60,7 @@ For example: https://colorful-halibut.glitch.me/api/v1/businesses/g6B2TZYS7JKKpN
 ## What matters in this exercise
 
 Use any libraries you would normally use if this were a real production App. Note: we're interested in your code & the way you solve the problem, not how well you can use a particular library or feature.
-*Due to the open-ended nature of this exercise, we don't expect you to complete it.* We're interested in your method and how you approach the problem just as much as we're interested in the end result.
+_Due to the open-ended nature of this exercise, we don't expect you to complete it._ We're interested in your method and how you approach the problem just as much as we're interested in the end result.
 
 Here's what you should strive for:
 
@@ -66,7 +70,6 @@ Here's what you should strive for:
 - Have fun.
 - Able to explain your architectural decisions.
 - Demonstrate good git hygiene.
-
 
 ## Q&A
 
