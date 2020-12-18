@@ -1,0 +1,56 @@
+/* tried to make it taco themed */
+#tacoContainer{
+  background-color:#f6c95c;
+}
+
+#tacoHeader{
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  color: #c91919
+}
+
+#locationInput{
+  height: 5vh;
+  width: 30vw;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#locationSubmit{
+  height: 5vh;
+  width: 10vw;
+  background-color: #41a332;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px
+}
+
+#tacoSubheader{
+  color: #c91919;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+#listContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#restaurantListContainer{
+  border: 1px solid black;
+  background-color: #B9D982;
+  margin: 10px;
+  color: #983d00;
+  width: 20vw;
+}
+
+#restaurantName{
+  font-size: 25px;
+}
+
+#restaurantAddress{
+  font-size: 15px;
+}
