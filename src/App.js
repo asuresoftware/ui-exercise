@@ -48,8 +48,8 @@ function App() {
               restaurantList.map((restaurants, id) => {
                 return (
                   <div id="restaurantListContainer" key={id}>
-                    <p id='restaurantName' >{restaurants.name}</p>
-                    <p id='restaurantAddress' >{restaurants.location.address1}</p>
+                    <h1 id='restaurantName' >{restaurants.name}</h1>
+                    <h2 id='restaurantAddress' >{restaurants.location.address1}</h2>
                   </div>
                 );
               })
