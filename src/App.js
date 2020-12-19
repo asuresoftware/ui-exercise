@@ -43,20 +43,20 @@ function App() {
         <h2 id='tacoSubheader' >Restaurants: </h2>
         <div>
           {/* turnery that either prints restaurant list or loading message */}
-          <p id="listContainer">
+          <div id="listContainer">
             {restaurantList ? (
               restaurantList.map((restaurants, id) => {
                 return (
                   <div id="restaurantListContainer" key={id}>
-                    <h1 id='restaurantName' >{restaurants.name}</h1>
-                    <h2 id='restaurantAddress' >{restaurants.location.address1}</h2>
+                    <p id='restaurantName' >{restaurants.name}</p>
+                    <p id='restaurantAddress' >{restaurants.location.address1}</p>
                   </div>
                 );
               })
             ) : (
               <p>Loading Restaurants</p>
             )}
-          </p>
+          </div>
         </div>
       </div>
     </div>
